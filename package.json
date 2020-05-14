@@ -1,0 +1,22 @@
+{
+  "name": "dio-devreactjs-bootstrap",
+  "version": "1.0.0",
+  "description": "Curso \"Construindo páginas para internet com Bootstrap\" do bootcamp DevReactJs da Digital Innovation One",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelgustavo/dio-devreactjs-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanuelgustavo/dio-devreactjs-bootstrap/issues"
+  },
+  "homepage": "https://github.com/emanuelgustavo/dio-devreactjs-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "4.5.0"
+  }
+}
