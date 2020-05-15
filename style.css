@@ -1,0 +1,76 @@
+* {
+    /*Polar Night*/
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    /*Snow Storm*/
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+    /*Frost*/
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+    /*Aurora*/
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+}
+
+body {
+    background-color: var(--nord6);
+}
+
+.container-xl {
+    background-color: var(--nord6);
+}
+
+nav a {
+    color: var(--nord1);
+}
+
+nav a:hover {
+    color: var(--nord11);
+}
+
+main {
+    background-color: var(--nord6);
+}
+
+.jumbotron {
+    background-color: var(--nord4);
+}
+
+.welcome {
+    font-size: 1.2rem;
+}
+
+.card {
+    background-color: var(--nord4);
+    color: var(--nord0);
+    transition: .5s;
+}
+
+.card:hover {
+    opacity: .6;
+}
+
+.bg-primary {
+    background-color: var(--nord13) !important;
+    color: var(--nord11) !important;
+    font-weight: 500 !important;
+}
+
+.my-github {
+    color: var(--nord0);
+    stroke-width: 4px;
+    transition: .5s;
+}
+
+.my-github:hover {
+    opacity: .6;
+}
