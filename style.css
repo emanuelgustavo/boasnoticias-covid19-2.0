@@ -29,6 +29,10 @@ body {
     background-color: var(--nord6);
 }
 
+.navbar {
+    background-color: var(--nord6);
+}
+
 nav a {
     color: var(--nord1);
 }
