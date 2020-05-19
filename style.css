@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+/*Color from https://www.nordtheme.com/*/
+
 * {
     /*Polar Night*/
     --nord0: #2E3440;
@@ -19,6 +23,8 @@
     --nord13: #EBCB8B;
     --nord14: #A3BE8C;
     --nord15: #B48EAD;
+    /*font*/
+    font-family: 'DM Mono', monospace;
 }
 
 body {
@@ -77,4 +83,21 @@ main {
 
 .my-github:hover {
     opacity: .6;
+}
+
+.name {
+    font-size: 1.75em;
+}
+
+.job {
+    font-size: 1.1em;
+}
+
+.list-group-item {
+    background-color: var(--nord6);
+    border: none;
+}
+
+.progress-skills {
+    background-color: var(--nord10);
 }
