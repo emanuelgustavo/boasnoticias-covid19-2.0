@@ -124,3 +124,19 @@ main {
 .linkedin:hover {
     box-shadow: 0 0 2rem #0073b1;
 }
+
+.contact-form-title {
+    background-color: var(--nord7);
+    box-shadow: 0 0 1rem var(--nord7);
+}
+
+.contact-send-button {
+    background-color: var(--nord0);
+    transition: 0.3s;
+}
+
+.contact-send-button:hover {
+    background-color: var(--nord7);
+    color: var(--nord0);
+    box-shadow: 0 0 1rem var(--nord0);
+}
