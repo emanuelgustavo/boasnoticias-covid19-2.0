@@ -101,3 +101,26 @@ main {
 .progress-skills {
     background-color: var(--nord10);
 }
+
+.my-social-media-link {
+    transition: 0.3s;
+}
+
+.my-social-media-link:hover {
+    background-color: #D8DEE9;
+    border: .1px solid #D8DEE9;
+    border-radius: 50%;
+    -webkit-transform: scale(1.25);
+}
+
+.github:hover {
+    box-shadow: 0 0 2rem #4C566A;
+}
+
+.twitter:hover {
+    box-shadow: 0 0 2rem rgba(29, 161, 242, 1.00);
+}
+
+.linkedin:hover {
+    box-shadow: 0 0 2rem #0073b1;
+}
