@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Sobre mim</title>
 </head>
 
 <body>
     <div class="container-xl">
         <nav class="navbar navbar-expand-md fixed-top d-flex sticky-top rounded-bottom mb-1 header-paralax">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../index.html">
                 Boas notícias sobre covid-19
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-menu" aria-controls="my-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="my-menu" style>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="../index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">Sobre</a>
@@ -48,32 +48,33 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Seu nome</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Digite seu nome..." aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="input-name" type="text" class="form-control" placeholder="Digite seu nome..." aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Seu e-mail</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Digite seu e-mail..." aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="input-email" type="text" class="form-control" placeholder="Digite seu e-mail..." aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Assunto</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="digite o assunto..." aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="input-subject" type="text" class="form-control" placeholder="digite o assunto..." aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text">Mensagem</span>
                     </div>
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Escreva sua mensagem..."></textarea>
+                    <textarea id="input-message" class="form-control" aria-label="With textarea" placeholder="Escreva sua mensagem..."></textarea>
                 </div>
                 <div class="w-75 mx-auto d-flex justify-content-center">
-                    <a href="#" class="my-4 w-50 btn btn-secondary btn-lg contact-send-button" tabindex="-1" role="button" aria-disabled="true">Enviar</a>
+                    <a id="form-submit" href="#" class="my-4 w-50 btn btn-secondary btn-lg contact-send-button" tabindex="-1" role="button" aria-disabled="true">Enviar</a>
                 </div>
             </div>
         </main>
     </div>
+    <script src="../main.js"></script>
     <script src="./styles/styles.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

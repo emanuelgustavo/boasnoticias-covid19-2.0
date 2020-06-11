@@ -59,13 +59,13 @@ main {
     font-size: 1.2rem;
 }
 
-.card {
+.card-home {
     background-color: var(--nord4);
     color: var(--nord0);
     transition: .5s;
 }
 
-.card:hover {
+.card-home:hover {
     opacity: .6;
 }
 
@@ -139,4 +139,12 @@ main {
     background-color: var(--nord7);
     color: var(--nord0);
     box-shadow: 0 0 1rem var(--nord0);
+}
+
+.input-invalid {
+    border: 1px solid red;
+}
+
+.input-valid {
+    border: 1px solid green;
 }
