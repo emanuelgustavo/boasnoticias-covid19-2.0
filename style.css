@@ -148,3 +148,13 @@ main {
 .input-valid {
     border: 1px solid green;
 }
+
+.link-news {
+    text-decoration: none;
+    color: var(--nord0);
+}
+
+.link-news:hover {
+    text-decoration: none;
+    color: var(--nord0);
+}

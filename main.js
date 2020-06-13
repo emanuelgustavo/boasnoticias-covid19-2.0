@@ -55,7 +55,5 @@ window.onload = () => {
 
       localStorage.setItem('message', JSON.stringify(newFormMessage));      
     };
-  };  
-
-
+  };
 };
