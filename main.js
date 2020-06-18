@@ -6,6 +6,10 @@ window.onload = () => {
   const inputSubjectElement = document.querySelector('#input-subject');
   const inputMessageElement = document.querySelector('#input-message');
 
+  //catch the alert form element
+  const alertFormElement = document.querySelector('#form-alert');
+  alertFormElement.classList.add("d-none");
+
   //form submit button
   const sendFormElement = document.querySelector('#form-submit');
 
@@ -44,7 +48,18 @@ window.onload = () => {
       isFormValidate.push(true);
     };
 
-    if (isFormValidate.every(validation => true)) {
+    if (isFormValidate.some(validation => validation === false)) {
+      alertFormElement.classList.add("alert-danger");
+      alertFormElement.classList.remove("d-none");
+      alertFormElement.innerHTML = " Há campos em branco. Verifique e reenvie o formulário de contato...";
+    };
+
+    console.log(isFormValidate.every(validation => validation === true));
+
+    if (isFormValidate.every(validation => validation === true)) {
+      alertFormElement.classList.add("alert-success");
+      alertFormElement.classList.remove("d-none");
+      alertFormElement.innerHTML = "Mensagem enviada com sucesso! Obrigado pelo seu feedback!";
 
       const newFormMessage = {
         name: inputNameElement.value,
@@ -52,8 +67,7 @@ window.onload = () => {
         subject: inputSubjectElement.value,
         message: inputMessageElement.value,
       };
-
-      localStorage.setItem('message', JSON.stringify(newFormMessage));      
+      
     };
   };
 };

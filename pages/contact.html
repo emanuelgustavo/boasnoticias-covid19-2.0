@@ -35,6 +35,7 @@
                 </ul>
             </div>
         </nav>
+        <!--
         <main class="row justify-content-center container-xl shadow py-4 m-2 rounded">
             <div class="jumbotron w-75 mx-auto contact-form-title ">
                 <h1 class="display-4">Entre em contato!</h1>
@@ -46,17 +47,21 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzU0lVUo6FHPJA61gLLMk5qVVbPPA1Dm5Yt5GCxNX9X_V6gQ/viewform?embedded=true" width="640" height="768" frameborder="0" marginheight="0" marginwidth="0">
                 Loading…
             </iframe>
+            
         </main>
-        <!---
+        -->
         <main class="row container-xl shadow py-4 m-2 rounded">
             <div class="jumbotron w-75 mx-auto contact-form-title ">
-                <h1 class="display-4">Entre em contato!</h1>
-                <p class="lead text-justify">
+                <h1 class="display-4 py-1">Entre em contato!</h1>
+                <p class="lead text-justify py-1">
                     Esse espaço é seu! Envie uma mensagem contando o que achou deste site, do layout, conteúdo, enfim, pode elogiar, sugerir ou xingar, estou aberto a sugestões e buscando sempre melhorar, e para isso seu feddback é essencial! <br /> <br
                     />Aproveite o espaço abaixo para isso!
                 </p>
             </div>
-            <div class="container">
+            <div id="form-alert" class="alert mx-auto d-none" role="alert">
+
+            </div>
+            <form name="contact" method="POST" data-netlify="true" class="container">
                 <div class="input-group my-4">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Seu nome</span>
@@ -82,11 +87,10 @@
                     <textarea id="input-message" class="form-control" aria-label="With textarea" placeholder="Escreva sua mensagem..."></textarea>
                 </div>
                 <div class="w-75 mx-auto d-flex justify-content-center">
-                    <a id="form-submit" href="#" class="my-4 w-50 btn btn-secondary btn-lg contact-send-button" tabindex="-1" role="button" aria-disabled="true">Enviar</a>
+                    <button type="submit" id="form-submit" class="my-4 w-50 btn btn-secondary btn-lg contact-send-button" tabindex="-1" role="button" aria-disabled="true">Enviar</button>
                 </div>
-            </div>
+            </form>
         </main>
-        -->
     </div>
     <script src="../main.js"></script>
     <script src="./styles/styles.js"></script>
